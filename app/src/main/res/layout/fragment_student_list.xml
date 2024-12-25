@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".StudentListFragment">
+
+    <Toolbar
+        android:id="@+id/listToolbar"
+        android:titleTextColor="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:title="@string/student_list_header"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="?attr/colorPrimary"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@+id/listToolbar"
+        android:padding="8dp"
+        android:scrollbars="vertical"
+        android:clipToPadding="false"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

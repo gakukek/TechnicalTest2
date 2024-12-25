@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">TechnicalTest2</string>
+    <string name="login_header">Login</string>
+    <string name="username_hint">Username</string>
+    <string name="password_hint">Password</string>
+    <string name="login_button">Login</string>
+    <string name="student_name">Bob</string>
+    <string name="student_address">123 Maple Street</string>
+    <string name="student_profile_picture_desc">Student Profile Picture</string>
+    <string name="location_icon_desc">location icon</string>
+    <string name="student_list_header">Student List</string>
+</resources>
