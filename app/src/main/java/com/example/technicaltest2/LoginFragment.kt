@@ -29,8 +29,14 @@ class LoginFragment : Fragment() {
         loginButton = view.findViewById(R.id.loginButton)
 
         loginButton.setOnClickListener {
-            val username = usernameEditText.text.toString()
-            var password = passwordEditText.text.toString()
+            val username = usernameEditText.text.toString().trim()
+            var password = passwordEditText.text.toString().trim()
+            if (username.isEmpty()) {
+                usernameEditText.error = "Username cannot be empty"
+            }
+            if (password.isEmpty()) {
+                passwordEditText.error = "Password cannot be empty"
+            }
             if (username.isNotEmpty() && password.isNotEmpty()) { //not null check
                 password = "$password@@" //masih workaround, min pass 6 kata
                 val email = "$username@email.com" // Workaround in order to use Firebase Auth
